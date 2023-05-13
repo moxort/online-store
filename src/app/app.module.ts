@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from "@angular/forms";
 
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListingPageComponent } from './components/listing-page/listing-page.component';
@@ -12,6 +14,7 @@ import { NewListingPageComponent } from './components/new-listing-page/new-listi
 import { EditListingPageComponent } from './components/edit-listing-page/edit-listing-page.component';
 import { ListingDataFormComponent } from './forms/listing-data-form/listing-data-form.component';
 import { NavBarComponent } from './forms/nav-bar/nav-bar.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -29,7 +32,8 @@ import { NavBarComponent } from './forms/nav-bar/nav-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
